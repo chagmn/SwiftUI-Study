@@ -30,7 +30,7 @@ struct ListStudy: View {
                     }
                 }
             }
-        }.listStyle(GroupedListStyle())
+        }.listStyle(InsetGroupedListStyle())
     }
 }
 
