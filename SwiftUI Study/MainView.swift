@@ -32,6 +32,15 @@ struct MainView: View {
                         })
                     }
                 )
+                NavigationLink(
+                    destination:
+                        ListStudy(),
+                    label: {
+                        Button("리스트 공부", action:{
+                            self.isButtonStudy.toggle()
+                        })
+                    }
+                )
             }
             .navigationTitle("SwiftUI Study")
             .navigationBarTitleDisplayMode(.inline)
