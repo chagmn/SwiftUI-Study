@@ -35,9 +35,9 @@ struct ListStudy: View {
                         }
                     }
                 }
-            }.listStyle(SidebarListStyle())
+            }.listStyle(GroupedListStyle())
             // .listStyle(InsetGroupedListStyle())
-            //
+            // .listStyle(SidebarListStyle())
             .navigationTitle("Title")
             .toolbar{
                 EditButton()
