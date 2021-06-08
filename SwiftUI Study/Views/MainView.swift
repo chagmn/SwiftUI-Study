@@ -41,6 +41,15 @@ struct MainView: View {
                         })
                     }
                 )
+                NavigationLink(
+                    destination:
+                        PickerStudy(),
+                    label: {
+                        Button("피커 공부", action:{
+                            self.isButtonStudy.toggle()
+                        })
+                    }
+                )
             }
             .navigationTitle("SwiftUI Study")
             .navigationBarTitleDisplayMode(.inline)

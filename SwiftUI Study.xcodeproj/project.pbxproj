@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		767DD87F266E161700CE1A61 /* ListStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DD87E266E161700CE1A61 /* ListStudy.swift */; };
+		767DD882266F605E00CE1A61 /* PickerStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DD881266F605E00CE1A61 /* PickerStudy.swift */; };
 		76A61644265B8528006570B4 /* SwiftUI_StudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A61643265B8528006570B4 /* SwiftUI_StudyApp.swift */; };
 		76A61646265B8528006570B4 /* ButtonStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A61645265B8528006570B4 /* ButtonStudy.swift */; };
 		76A61648265B852D006570B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A61647265B852D006570B4 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		767DD87E266E161700CE1A61 /* ListStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudy.swift; sourceTree = "<group>"; };
+		767DD881266F605E00CE1A61 /* PickerStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerStudy.swift; sourceTree = "<group>"; };
 		76A61640265B8528006570B4 /* SwiftUI Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A61643265B8528006570B4 /* SwiftUI_StudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_StudyApp.swift; sourceTree = "<group>"; };
 		76A61645265B8528006570B4 /* ButtonStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStudy.swift; sourceTree = "<group>"; };
@@ -39,6 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		767DD880266F604100CE1A61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76A6165E265E3373006570B4 /* MainView.swift */,
+				76A61645265B8528006570B4 /* ButtonStudy.swift */,
+				76A61660265E3B87006570B4 /* TextFieldStudy.swift */,
+				767DD87E266E161700CE1A61 /* ListStudy.swift */,
+				767DD881266F605E00CE1A61 /* PickerStudy.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		76A61637265B8528006570B4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +72,8 @@
 		76A61642265B8528006570B4 /* SwiftUI Study */ = {
 			isa = PBXGroup;
 			children = (
+				767DD880266F604100CE1A61 /* Views */,
 				76A61643265B8528006570B4 /* SwiftUI_StudyApp.swift */,
-				76A6165E265E3373006570B4 /* MainView.swift */,
-				76A61645265B8528006570B4 /* ButtonStudy.swift */,
-				76A61660265E3B87006570B4 /* TextFieldStudy.swift */,
-				767DD87E266E161700CE1A61 /* ListStudy.swift */,
 				76A61647265B852D006570B4 /* Assets.xcassets */,
 				76A6164C265B852E006570B4 /* Info.plist */,
 				76A61649265B852E006570B4 /* Preview Content */,
@@ -150,6 +161,7 @@
 				76A61646265B8528006570B4 /* ButtonStudy.swift in Sources */,
 				76A61661265E3B87006570B4 /* TextFieldStudy.swift in Sources */,
 				767DD87F266E161700CE1A61 /* ListStudy.swift in Sources */,
+				767DD882266F605E00CE1A61 /* PickerStudy.swift in Sources */,
 				76A6165F265E3373006570B4 /* MainView.swift in Sources */,
 				76A61644265B8528006570B4 /* SwiftUI_StudyApp.swift in Sources */,
 			);
