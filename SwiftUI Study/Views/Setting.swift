@@ -30,40 +30,11 @@ struct Setting: View {
                 }
                 
                 Section{
-                    HStack{
-                        Image(systemName: "airplane")
-                            .resizable()
-                            .foregroundColor(.white)
-                            .padding(.all, 7)
-                            .background(Color.init(UIColor.systemOrange))
-                            .frame(width: 32, height: 32)
-                            .cornerRadius(5)
-                        
-                        Text("에어플레인 모드")
-                        
-                        Spacer()
-                        
-                        Toggle("aa", isOn: $isAirplaneModeON)
-                            .labelsHidden()
-                    }
-                    
-                    HStack{
-                        Image(systemName: "wifi")
-                            .resizable()
-                            .foregroundColor(.white)
-                            .padding(.all, 7)
-                            .background(Color.init(UIColor.systemBlue))
-                            .frame(width: 32, height: 32)
-                            .cornerRadius(5)
-                        
-                        Text("Wi-Fi")
-                        
-                        Spacer()
-                        
-                        
-                    }
-                    
-
+                    Setting_ONE()
+                }
+                
+                Section{
+                    Setting_TWO()
                 }
             }
             .listStyle(GroupedListStyle())
@@ -73,8 +44,113 @@ struct Setting: View {
     }
 }
 
+struct Setting_ONE: View{
+    @State private var isAirplaneModeON: Bool = false
+    
+    var body: some View{
+        HStack{
+            Image(systemName: "airplane")
+                .resizable()
+                .foregroundColor(.white)
+                .padding(.all, 7)
+                .background(Color.init(UIColor.systemOrange))
+                .frame(width: 32, height: 32)
+                .cornerRadius(5)
+            
+            Text("에어플레인 모드")
+            
+            Spacer()
+            
+            Toggle("aa", isOn: $isAirplaneModeON)
+                .labelsHidden()
+        }
+        
+        HStack{
+            Image(systemName: "wifi")
+                .resizable()
+                .foregroundColor(.white)
+                .padding(.all, 7)
+                .background(Color.init(UIColor.systemBlue))
+                .frame(width: 32, height: 32)
+                .cornerRadius(5)
+            
+            Text("Wi-Fi")
+            
+            Spacer()
+        }
+        
+        HStack{
+            // 블루투스 이미지
+            Image(systemName: "bluetooth")
+                .resizable()
+                .foregroundColor(.white)
+                .padding(.all, 7)
+                .background(Color.init(UIColor.systemBlue))
+                .frame(width: 32, height: 32)
+                .cornerRadius(5)
+            
+            Text("Bluetooth")
+            
+            Spacer()
+        }
+        
+        HStack{
+            Image(systemName: "antenna.radiowaves.left.and.right")
+                .resizable()
+                .foregroundColor(.white)
+                .padding(.all, 7)
+                .background(Color.init(UIColor.systemGreen))
+                .frame(width: 32, height: 32)
+                .cornerRadius(5)
+            
+            Text("셀룰러")
+            
+            Spacer()
+        }
+        
+        HStack{
+            Image(systemName: "personalhotspot")
+                .resizable()
+                .foregroundColor(.white)
+                .padding(.all, 7)
+                .background(Color.init(UIColor.systemGreen))
+                .frame(width: 32, height: 32)
+                .cornerRadius(5)
+            
+            Text("개인용 핫스팟")
+            
+            Spacer()
+        }
+        
+        HStack{
+            Image(systemName: "antenna.radiowaves.left.and.right")
+                .resizable()
+                .foregroundColor(.white)
+                .padding(.all, 7)
+                .background(Color.init(UIColor.systemBlue))
+                .frame(width: 32, height: 32)
+                .cornerRadius(5)
+            
+            Text("VPN")
+            
+            Spacer()
+        }
+
+    }
+}
+
+struct Setting_TWO: View {
+    
+    var body: some View{
+        HStack{
+            Text("!1")
+        }
+    }
+}
+
 struct Setting_Previews: PreviewProvider {
     static var previews: some View {
         Setting()
     }
 }
+
