@@ -50,6 +50,16 @@ struct MainView: View {
                         })
                     }
                 )
+                
+                NavigationLink(
+                    destination:
+                        Setting(),
+                    label: {
+                        Button("세팅 뷰 카피", action:{
+                            self.isButtonStudy.toggle()
+                        })
+                    }
+                )
             }
             .navigationTitle("SwiftUI Study")
             .navigationBarTitleDisplayMode(.inline)
