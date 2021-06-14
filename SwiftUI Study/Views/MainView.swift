@@ -55,7 +55,7 @@ struct MainView: View {
                     destination:
                         Setting(),
                     label: {
-                        Button("세팅 뷰 카피", action:{
+                        Button("설정 앱 카피", action:{
                             self.isButtonStudy.toggle()
                         })
                     }
