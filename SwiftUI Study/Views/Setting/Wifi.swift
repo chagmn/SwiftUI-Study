@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Wifi: View {
     @State private var isWifiOn: Bool = true
+    @State private var selection: Bool = false
     
     let footer1: Text = Text("알고 있는 네트워크에 자동으로 연결됩니다. 사용 가능한 알고 있는 네트워크가 없다면, 네트워크에 수동으로 연결해야 합니다.")
     
@@ -21,18 +22,17 @@ struct Wifi: View {
             if isWifiOn{
                 Section{
                     HStack{
-                        Image(systemName: "checkmark")
+                        Image(systemName: "")
                         Text("Wi-Fi")
                         Spacer()
                         Toggle("11", isOn: $isWifiOn)
                             .labelsHidden()
                     }
                     HStack{
-                        Image(systemName: "")
-                        Text("Wi-Fi")
+                        Image(systemName: "checkmark")
+                        Text("Wi-Fi 이름")
                         Spacer()
-                        Toggle("11", isOn: $isWifiOn)
-                            .labelsHidden()
+                     
                     }
                 }
                 
