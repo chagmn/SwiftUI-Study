@@ -7,43 +7,61 @@
 
 import SwiftUI
 
-struct Setting: View {    
+struct Setting: View {
+    @State private var searchText = ""
+    
     var body: some View {
         NavigationView{
-            List{
-                Section{
-                    NavigationLink(destination: AppleID()){
-                        HStack(spacing: 20){
-                            Image(systemName: "person.fill")
-                                .resizable()
-                                .frame(width: 60, height: 60)
-                                .aspectRatio(contentMode: .fill)
-                                .foregroundColor(.white)
-                                .padding(.top, 15)
-                                .background(Color.init(UIColor.systemGray3))
-                                .clipShape(Circle())
-                            
-                            
-                            VStack(alignment: .leading, spacing: 5){
-                                Text("이사과")
-                                    .font(.title)
-                                Text("Apple ID, iCloud, 미디어 및 구입")
-                                    .font(.footnote)
+            VStack{
+                ZStack{
+                    Rectangle()
+                        .foregroundColor(Color.init(UIColor.systemGray5))
+                    HStack{
+                        Image(systemName: "magnifyingglass")
+                        TextField("검색", text: $searchText)
+                    }
+                    .foregroundColor(.gray)
+                    .padding(.leading, 13)
+                }
+                .frame(height: 40)
+                .cornerRadius(13)
+                .padding([.leading,.trailing])
+                
+                List{
+                    Section{
+                        NavigationLink(destination: AppleID()){
+                            HStack(spacing: 20){
+                                Image(systemName: "person.fill")
+                                    .resizable()
+                                    .frame(width: 60, height: 60)
+                                    .aspectRatio(contentMode: .fill)
+                                    .foregroundColor(.white)
+                                    .padding(.top, 15)
+                                    .background(Color.init(UIColor.systemGray3))
+                                    .clipShape(Circle())
+                                
+                                
+                                VStack(alignment: .leading, spacing: 5){
+                                    Text("이사과")
+                                        .font(.title)
+                                    Text("Apple ID, iCloud, 미디어 및 구입")
+                                        .font(.footnote)
+                                }
                             }
                         }
                     }
+                    
+                    Section{
+                        Setting_ONE()
+                    }
+                    
+                    Section{
+                        Setting_TWO()
+                    }
                 }
-                
-                Section{
-                    Setting_ONE()
-                }
-                
-                Section{
-                    Setting_TWO()
-                }
+                .listStyle(GroupedListStyle())
+                .navigationTitle("설정")
             }
-            .listStyle(GroupedListStyle())
-            .navigationTitle("설정")
         }
     }
 }
@@ -85,6 +103,9 @@ struct Setting_ONE: View{
                 Text("Wi-Fi")
                 
                 Spacer()
+                
+                Text("연결 안 됨")
+                    .foregroundColor(Color.init(UIColor.systemGray))
                 
             }
         }
