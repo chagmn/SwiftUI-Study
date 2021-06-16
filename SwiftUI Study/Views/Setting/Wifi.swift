@@ -29,10 +29,14 @@ struct Wifi: View {
                             .labelsHidden()
                     }
                     HStack{
-                        Image(systemName: "checkmark")
+                        if selection {
+                            Image(systemName: "checkmark")
+                        }
                         Text("Wi-Fi 이름")
                         Spacer()
                      
+                    }.onTapGesture {
+                        selection.toggle()
                     }
                 }
                 
