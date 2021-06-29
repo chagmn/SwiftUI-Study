@@ -30,7 +30,7 @@ struct ButtonStudy: View {
                 let firstButton = Alert.Button.cancel(Text("확인"))
                 let secondButton = Alert.Button.destructive(Text("취소"))
                 
-                return Alert(title: Text("알림!!"), message: Text("아아아아아"), primaryButton: firstButton, secondaryButton: secondButton)
+                return Alert(title: Text("알림!!"), message: Text("삐용삐용삐용~~~🚨"), primaryButton: firstButton, secondaryButton: secondButton)
             }
             
             Button("<액션 시트 버튼>"){
