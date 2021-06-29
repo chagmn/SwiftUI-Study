@@ -18,6 +18,7 @@
 		76A6164B265B852E006570B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A6164A265B852E006570B4 /* Preview Assets.xcassets */; };
 		76A6165F265E3373006570B4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6165E265E3373006570B4 /* MainView.swift */; };
 		76A61661265E3B87006570B4 /* TextFieldStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A61660265E3B87006570B4 /* TextFieldStudy.swift */; };
+		76CFC8A8268B5EF200AACDE4 /* LazyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFC8A7268B5EF200AACDE4 /* LazyStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		76A6164C265B852E006570B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76A6165E265E3373006570B4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		76A61660265E3B87006570B4 /* TextFieldStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStudy.swift; sourceTree = "<group>"; };
+		76CFC8A7268B5EF200AACDE4 /* LazyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				76A61660265E3B87006570B4 /* TextFieldStudy.swift */,
 				767DD87E266E161700CE1A61 /* ListStudy.swift */,
 				767DD881266F605E00CE1A61 /* PickerStudy.swift */,
+				76CFC8A7268B5EF200AACDE4 /* LazyStack.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				7685E276267338D900C0422A /* Setting.swift in Sources */,
 				76A6165F265E3373006570B4 /* MainView.swift in Sources */,
 				76A61644265B8528006570B4 /* SwiftUI_StudyApp.swift in Sources */,
+				76CFC8A8268B5EF200AACDE4 /* LazyStack.swift in Sources */,
 				7685E2792673470000C0422A /* AppleID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

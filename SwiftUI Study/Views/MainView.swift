@@ -60,6 +60,15 @@ struct MainView: View {
                         })
                     }
                 )
+                
+                NavigationLink(
+                    destination: LazyStack(),
+                    label: {
+                        Button("Lazy Stack", action: {
+                            self.isButtonStudy.toggle()
+                        })
+                    }
+                )
             }
             .navigationTitle("SwiftUI Study")
             .navigationBarTitleDisplayMode(.inline)
