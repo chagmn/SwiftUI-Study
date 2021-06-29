@@ -10,6 +10,9 @@ import SwiftUI
 struct Setting: View {
     @State private var searchText = ""
     
+    init(){
+        UITableView.appearance().contentInset.top = -20
+    }
     var body: some View {
         NavigationView{
             VStack{
@@ -22,33 +25,34 @@ struct Setting: View {
                     }
                     .foregroundColor(.gray)
                     .padding(.leading, 13)
+                    
                 }
                 .frame(height: 40)
                 .cornerRadius(13)
                 .padding([.leading,.trailing])
                 
+                
                 List{
-                    Section{
-                        NavigationLink(destination: AppleID()){
-                            HStack(spacing: 20){
-                                Image(systemName: "person.fill")
-                                    .resizable()
-                                    .frame(width: 60, height: 60)
-                                    .aspectRatio(contentMode: .fill)
-                                    .foregroundColor(.white)
-                                    .padding(.top, 15)
-                                    .background(Color.init(UIColor.systemGray3))
-                                    .clipShape(Circle())
-                                
-                                
-                                VStack(alignment: .leading, spacing: 5){
-                                    Text("이사과")
-                                        .font(.title)
-                                    Text("Apple ID, iCloud, 미디어 및 구입")
-                                        .font(.footnote)
-                                }
+                    NavigationLink(destination: AppleID()){
+                        HStack(spacing: 20){
+                            Image(systemName: "person.fill")
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .aspectRatio(contentMode: .fill)
+                                .foregroundColor(.white)
+                                .padding(.top, 15)
+                                .background(Color.init(UIColor.systemGray3))
+                                .clipShape(Circle())
+                            
+                            
+                            VStack(alignment: .leading, spacing: 5){
+                                Text("이사과")
+                                    .font(.title)
+                                Text("Apple ID, iCloud, 미디어 및 구입")
+                                    .font(.footnote)
                             }
                         }
+                        
                     }
                     
                     Section{
@@ -57,6 +61,10 @@ struct Setting: View {
                     
                     Section{
                         Setting_TWO()
+                    }
+                    
+                    Section{
+                        Setting_Three()
                     }
                 }
                 .listStyle(GroupedListStyle())
@@ -112,6 +120,7 @@ struct Setting_ONE: View{
         
         HStack{
             // 블루투스 이미지
+            
             Image(systemName: "bluetooth")
                 .resizable()
                 .foregroundColor(.white)
@@ -123,6 +132,7 @@ struct Setting_ONE: View{
             Text("Bluetooth")
             
             Spacer()
+            
         }
         
         HStack{
@@ -174,7 +184,40 @@ struct Setting_TWO: View {
     
     var body: some View{
         HStack{
-            Text("!1")
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+    }
+}
+
+struct Setting_Three: View {
+    
+    var body: some View{
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
+        }
+        HStack{
+            Text("예시")
         }
     }
 }
